@@ -4,81 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Saya</title>
-    <style>
-        .menu {
-            text-align: center;
-        }
-
-        ul{
-            list-style: none;
-            padding-left: 0%;
-        }
-
-        li{
-            margin-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="menu">
-        <h1>Selamat Datang di Portofolio Saya !</h1>
-        <img src="pas foto.png" alt="Foto Profil" style="width:190px; height:185px; border-radius:50%;"></br>
-        <a href="#aboutme">| Tentang saya |</a>
-        <a href="#project">Proyek |</a>
-        <a href="#kontak">Hubungi |</a>
-        <br><hr><br>
-
-        <p>Halo, nama saya <b>Yan Stephen Christian Immanuel Hutagalung</b>, saya seorang mahasiswa Universitas Pertamina angkatan 2022 Jurusan Ilmu Komputer. Saat ini saya sedang menjalani semester 5. Selama menjalani kuliah banyak projek yang telah saya kerjakan selama saya berkuliah. Saya juga aktif berorganisasi sebagai anggota Himpunan Mahasiswa Ilmu Komputer. </p>
+    <header>
+        <h1>Welcome to Yan's Portofolio</h1>
     </header>
-    <div id="aboutme">
-        <h2 >Tentang Saya</h2>
-        <p> Sepanjang studi saya di bidang ilmu komputer, saya telah mempelajari beberapa bahasa pemrograman, termasuk C++, Java, dan Python. Saat ini, fokus saya adalah mengembangkan keterampilan yang dapat memperkuat posisi saya di dunia profesional. Saya terbuka untuk diskusi, kolaborasi, atau proyek apa pun. Di masa depan, tujuan saya adalah bekerja sebagai analis data atau programmer backend.</p>
-        <br><hr><br>
+    </br>
+
+    <div class="foto">
+        <img class="foto" src="pas foto.jpg" alt="Foto Profil"><br>
     </div>
+    <nav>
+        <a href="#aboutme">About Me</a>
+        <a href="#project">Project</a>
+        <a href="#kontak">Contact</a>
+        <a href="#Skill">Skill</a>
+        <a href="#feedback">Feedback</a>
+        
+    </nav>
 
-    <div id="project">
-        <h2>Proyek-Proyek Saya</h2>
-        <p>Di bawah ini adalah beberapa proyek yang pernah saya kerjakan:</p>
+    <section id="aboutme">
+        <h2>About Me</h2>
+        <p>Hello! My name is <b>Yan Stephen Christian Immanuel Hutagalung</b>, and I am currently a 5th-semester Computer Science student at Universitas Pertamina. From a young age, I've always been passionate about technology and the way it shapes the world around us. This passion has driven me to explore various aspects of computing and software development. I thrive on creativity, constantly seeking to innovate and bring fresh ideas to life, whether it's through coding or building new systems. Over the past few years, I have developed a solid foundation in several programming languages, including C++, Python, and Java. These languages have empowered me to approach problem-solving in diverse and efficient ways. My interests span a broad range of fields within computer science, with a particular focus on web development, game development, Internet of Things (IoT), and cybersecurity. Each of these areas excites me because of their potential to create impactful solutions and drive technological advancements. During my time at university, I’ve been fortunate enough to work on several hands-on projects that have helped deepen my understanding of these fields. These projects, which I will elaborate on below, have given me invaluable experience in tackling real-world challenges and collaborating with peers. At this stage in my academic journey, I am focused on personal and professional growth. I am continuously learning new skills and exploring different technologies to prepare myself for the rapidly evolving tech landscape. I’m always open to opportunities to collaborate with others, especially on projects that push the boundaries of innovation and creativity. If you're working on something exciting and think we could create something great together, feel free to reach out!</p>
+        <article>
+            <h3>Multimedia</h3>
+            <video width="320" height="240" controls>
+                <source src="videocontoh.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+            </video>
 
-        <table border="1">
+            <audio controls>
+                <source src="nirvanasongs.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung audio.
+            </audio>
+        </article>
+    </section>
+
+    <section id="Skill">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <img  src="https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" height="30">
+            <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" height="30">
+            <img src="https://img.shields.io/badge/-Python-306998?style=flat-square&logo=python&logoColor=white" height="30">
+            <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" height="30">
+        </div>
+        
+    </section>
+
+    <section id="project">
+        <h2>My Project</h2>
+        <table>
             <tr>
                 <th rowspan="2">No</th>
-                <th rowspan="2">Nama Proyek</th>
-                <th colspan="2">Durasi</th>
-                <th rowspan="2">Deskripsi</th>
+                <th rowspan="2">Project Name</th>
+                <th colspan="2">Duration</th>
+                <th rowspan="2">Description</th>
             </tr>
             <tr>
-                <th>Mulai</th>
-                <th>Selesai</th>
+                <th>Start</th>
+                <th>Finish</th>
             </tr>
             <tr>
                 <td align="center">1</td>
                 <td>Analisis Penyebab Kemiskinan di Jakarta</td>
                 <td>Januari 2023</td>
                 <td>Maret 2023</td>
-                <td align="justify">Proyek ini akan membangun fungsi untuk menganalis penyebab kemiskinan yang terjadi di Indonesia dengan menggunakan konsep matematika numerik.</td>
+                <td align="justify">Proyek ini menggunakan konsep matematika numerik untuk menganalisis penyebab kemiskinan di Jakarta.</td>
             </tr>
             <tr>
                 <td align="center">2</td>
                 <td>Proyek Aplikasi Pembelajaran</td>
                 <td>April 2023</td>
                 <td>Agustus 2023</td>
-                <td align="justify">Proyek ini membuat aplikasi seperti ruang guru dengan target anak SMA kelas 12 dengan tujuan agar tidak salah jurusan ketika masuk ke bangku perkuliahan.</td>
+                <td align="justify">Proyek ini membuat aplikasi edukasi untuk membantu siswa SMA kelas 12 memilih jurusan yang tepat saat kuliah.</td>
             </tr>
         </table>
-        <br><hr><br>
-    </div>
+    </section>
 
-    <div id="kontak">
-        <h2>Kontak</h2>
-        <p>Hubungi saya:</p>
+    <section id="kontak">
+        <h2>Contact</h2>
         <ul>
-            <li><img src="iconemail.png" alt="logo email" width="25"> Email:<a href="mailto:yan.stephen211@gmail.com">yan.stephen211@gmail.com</a></li>
-            <li><img src="icontelepon.png" alt="logo Telepon" width="20"> Telepon: +6281291468340</li>
-            <li><img src="iconlinkeidn.png" alt="HTML Logo" width="20"> LinkedIn:<a href="https://id.linkedin.com/in/yan-stephen-christian-immanuel-b03217248">Yan Stephen Christian Immanuel Hutagalung</a></li>
+            <li><a href="mailto:yan.stephen211@gmail.com"><img src="iconemail.png" alt="logo email" width="25"></a> <a href="mailto:yan.stephen211@gmail.com">Email</a></li>
+            <li><img src="icontelepon.png" alt="logo Telepon" width="20"> +62&#40;812&#41;91468340</li>
+            <li><a href="https://id.linkedin.com/in/yan-stephen-christian-immanuel-b03217248"><img src="iconlinkeidn.png" alt="HTML Logo" width="20"></a> <a href="https://id.linkedin.com/in/yan-stephen-christian-immanuel-b03217248">LinkedIn</a></li>
+            <li><a href="https://github.com/YanStephen29"><img src="icongit.png" alt="GitHub Logo" width="20"></a> <a href="https://github.com/YanStephen29">GitHub</a></li>
+            
         </ul>
-        <br><hr><br>
-    </div>
+    </section>
 
+    <section id="feedback">
+        <h2>Feedback</h2>
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required placeholder="Nama Lengkap"><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com"><br><br>
+                
+                <label for="age">Umur:</label>
+                <input type="number" id="age" name="age" min="17" max="99"><br><br>
+                
+                <p>Jenis Kelamin:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Laki-laki</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Perempuan</label><br><br>
+                
+                <p>Minat:</p>
+                <input type="checkbox" id="programming" name="interest" value="programming">
+                <label for="programming">Pemrograman</label><br>
+                <input type="checkbox" id="design" name="interest" value="design">
+                <label for="design">Desain</label><br><br>
+                
+                <label for="education">Tingkat Pendidikan:</label>
+                <select id="education" name="education">
+                    <option value="sma">SMA</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="sarjana">Sarjana</option>
+                    <option value="magister">Magister</option>  
+                </select><br><br>
+
+                <label for="feedback">Saran & Masukkan</label><br>
+                <textarea id="feedback" name="feedback" placeholder="Tuliskan saran dan masukkan anda"></textarea><br></br>
+                <input type="submit" value="Kirim">
+            </form>
+    </section>
+
+    <footer>
+        <p class="pforfooter">&copy; 2024 Yan Stephen Christian Immanuel Hutagalung. All rights reserved.</p>
+    </footer>
 </body>
 </html>
